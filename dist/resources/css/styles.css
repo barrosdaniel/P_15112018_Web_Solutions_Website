@@ -1,3 +1,13 @@
+/* Colors
+---------------------------------------------------------------------- */
+:root {
+  --background-color: #333;
+  --primary-text-color: #eaeaea;
+  --highlight-color-gray: #666;
+}
+
+/* Resets
+---------------------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +15,51 @@
 }
 
 html {
-  background-color: #fafafa;
-  /* color: #fff; */
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.5;
   font-weight: 500;
+  text-align: center;
   text-rendering: optimizeLegibility;
+}
+
+/* Global Styles
+---------------------------------------------------------------------- */
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 1rem;
+}
+
+p {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+/* Buttons */
+.button:link,
+.button:visited {
+  display: inline-block;
+  margin: 0.5rem 0;
+  border: 1px solid var(--highlight-color-gray);
+  padding: 1rem 2rem;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover,
+.button:active {
+  border: 1px solid var(--primary-text-color);
+  background-color: var(--primary-text-color);
+  color: var(--background-color);
 }
