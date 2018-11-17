@@ -6,6 +6,8 @@
   --highlight-color-gray: #666;
 }
 
+
+
 /* Resets
 ---------------------------------------------------------------------- */
 * {
@@ -25,6 +27,8 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+
+
 /* Global Styles
 ---------------------------------------------------------------------- */
 
@@ -34,7 +38,9 @@ img {
   height: auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 1rem;
 }
@@ -43,6 +49,8 @@ p {
   margin: 0;
   padding: 1rem 0;
 }
+
+
 
 /* Buttons */
 .button:link,
@@ -62,4 +70,33 @@ p {
   border: 1px solid var(--primary-text-color);
   background-color: var(--primary-text-color);
   color: var(--background-color);
+}
+
+
+
+/* Header Showcase
+---------------------------------------------------------------------- */
+#showcase {
+  min-height: 70vh;
+}
+
+#showcase .background-image {
+  position: absolute;
+  background: var(--background-color) url('../img/showcase-background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#showcase .content-wrap {
+  padding: 0 1.5rem;
+}
+
+#showcase h1 {
+  padding: 15vh 0 0;
+  font-size: 1.8rem;
 }
