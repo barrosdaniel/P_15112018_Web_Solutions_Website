@@ -2,7 +2,8 @@
 ---------------------------------------------------------------------- */
 :root {
   --background-color: #333;
-  --primary-text-color: #eaeaea;
+  --primary-text-color: #EAEAEA;
+  --highlight-color: #2195F2;
   --highlight-color-gray: #666;
 }
 
@@ -140,4 +141,26 @@ p {
 .card-content p {
   padding: 0;
   font-size: 0.9rem;
+}
+
+
+
+/* Section C
+---------------------------------------------------------------------- */
+#section-c {
+  background-color: var(--primary-text-color);
+  color: var(--background-color);
+  padding: 2rem;
+}
+
+
+
+/* Section D
+---------------------------------------------------------------------- */
+#section-d .box {
+  padding: 2rem;
+}
+
+#section-d .box:first-child {
+  background-color: var(--highlight-color);
 }
