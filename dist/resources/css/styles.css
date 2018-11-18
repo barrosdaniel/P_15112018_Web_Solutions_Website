@@ -2,6 +2,7 @@
 ---------------------------------------------------------------------- */
 :root {
   --background-color: #333;
+  --background-color-dark: #2F2F2F;
   --primary-text-color: #EAEAEA;
   --highlight-color: #2195F2;
   --highlight-color-gray: #666;
@@ -163,4 +164,20 @@ p {
 
 #section-d .box:first-child {
   background-color: var(--highlight-color);
+}
+
+
+
+/* Footer
+---------------------------------------------------------------------- */
+#main-footer p {
+  padding: 1rem;
+  background-color: var(--background-color-dark);
+  font-size: 0.8rem;
+
+}
+
+#main-footer a {
+  color: var(--highlight-color);
+  text-decoration: none;
 }
