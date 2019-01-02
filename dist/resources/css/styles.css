@@ -99,7 +99,7 @@ p {
   }
 
   .content-wrap,
-  #section-b ul, 
+  #section-b ul,
   #main-footer p {
     grid-column: 2 / 4;
   }
@@ -180,10 +180,6 @@ p {
 
 /* Section B
 ---------------------------------------------------------------------- */
-#section-b {
-  /* padding-bottom: 2rem; */
-}
-
 #section-b ul {
   list-style: none;
 }
@@ -229,6 +225,26 @@ p {
   background-color: var(--highlight-color);
 }
 
+#section-d .box:first-child p {
+  margin-bottom: 1rem;
+}
+
+#section-d a {
+  margin-top: 3rem;
+  border: 1px solid transparent;
+  padding: 1rem 2rem;
+  background-color: var(--primary-text-color);
+  color: var(--highlight-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#section-d a:hover {
+  border: 1px solid var(--primary-text-color);
+  background-color: var(--highlight-color);
+  color: var(--primary-text-color);
+}
+
 
 
 /* Footer
@@ -243,4 +259,26 @@ p {
 #main-footer a {
   color: var(--highlight-color);
   text-decoration: none;
+}
+
+
+
+/* Contact Page
+---------------------------------------------------------------------- */
+#contact {
+  min-height: calc(100vh - 57px);
+}
+
+#contact .background-image {
+  position: absolute;
+  background: var(--background-color) url('../img/showcase-background.jpg');
+  filter: blur(4px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
 }
