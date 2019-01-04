@@ -301,12 +301,16 @@ p {
   padding: 2rem;
 }
 
+#contact .brand {
+  text-align: center;
+}
+
 #contact ul {
   list-style: none;
 }
 
-#contact .brand {
-  text-align: center;
+#contact li.company-info__address--secondLine {
+  padding-left: 18px;
 }
 
 #contact .wrapper {
