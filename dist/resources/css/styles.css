@@ -16,6 +16,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -71,6 +72,7 @@ p {
   background-color: var(--highlight-color);
   color: var(--primary-text-color);
   text-decoration: none;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -109,7 +111,9 @@ p {
   }
 
   #section-a .content-text {
+    -webkit-columns: 2;
     columns: 2;
+    -webkit-column-gap: 2rem;
     column-gap: 2rem;
   }
 
@@ -118,7 +122,10 @@ p {
   }
 
   #section-b ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
   }
 
@@ -154,6 +161,7 @@ p {
 #showcase .background-image {
   position: absolute;
   background: var(--background-color) url('../img/showcase-background.jpg');
+  -webkit-filter: blur(4px);
   filter: blur(4px);
   background-position: center;
   background-repeat: no-repeat;
@@ -240,6 +248,7 @@ p {
   background-color: var(--primary-text-color);
   color: var(--highlight-color);
   text-decoration: none;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -284,6 +293,7 @@ p {
 #contact .background-image {
   position: absolute;
   background-image: url('../img/showcase-background.jpg');
+  -webkit-filter: blur(4px);
   filter: blur(4px);
   background-position: center;
   background-repeat: no-repeat;
@@ -315,6 +325,7 @@ p {
 
 #contact .wrapper {
   background-color: var(--box-shadow-color);
+  -webkit-box-shadow: 0 0 20px var(--box-shadow-color);
   box-shadow: 0 0 20px var(--box-shadow-color);
 }
 

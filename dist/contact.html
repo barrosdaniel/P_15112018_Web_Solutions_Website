@@ -34,7 +34,7 @@
         </div>
         <div class="contact">
           <h3>Email Us</h3>
-          <form action="">
+          <form action="index.html" onclick="successful()">
             <p>
               <label for="name">Name</label>
               <input type="text" name="name" id="name">
@@ -71,6 +71,14 @@
     <p>&copy; <a href="index.html">Digitalise Web Solutions</a> and
       contributors 2018. ABN 88 888 888 888</p>
   </footer>
+
+  <script>
+    function successful() {
+      alert(
+        'Your message has been sent successfully. We will get in touch shortly. Thank you.'
+      );
+    }
+  </script>
 
 </body>
 
