@@ -34,10 +34,13 @@
         </div>
         <div class="contact">
           <h3>Email Us</h3>
-          <form action="index.html" onclick="successful()">
+          <div class="alert">Your message has been sent. You will hear from us
+            shortly.</div>
+          <form id="contactForm">
+            <!-- Pending validation -->
             <p>
               <label for="name">Name</label>
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name" required>
             </p>
             <p>
               <label for="company">Company</label>
@@ -45,7 +48,7 @@
             </p>
             <p>
               <label for="email">Email Address</label>
-              <input type="email" name="email" id="email">
+              <input type="email" name="email" id="email" required>
             </p>
             <p>
               <label for="phone">Phone</label>
@@ -69,16 +72,13 @@
   <!-- Footer -->
   <footer id="main-footer" class="grid">
     <p>&copy; <a href="index.html">Digitalise Web Solutions</a> and
-      contributors 2018. ABN 88 888 888 888</p>
+      contributors <span id="year"></span>. ABN 88 888 888 888</p>
   </footer>
 
-  <script>
-    function successful() {
-      alert(
-        'Your message has been sent successfully. We will get in touch shortly. Thank you.'
-      );
-    }
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+  <script src="resources/js/main.js"></script>
 
 </body>
 
