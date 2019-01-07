@@ -367,6 +367,16 @@ p {
   text-transform: uppercase;
 }
 
+#contact .alert {
+  display: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: var(--highlight-color);
+  color: var(--primary-text-color);
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
 
   #contact .wrapper {
