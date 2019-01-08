@@ -3,7 +3,7 @@ $('#year').text(new Date().getFullYear());
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyACay3F1Z32C8a9WU_D0v2ODGGCNTvhH4M",
+  apiKey: HIDDEN,
   authDomain: "digitalise-web-solutions.firebaseapp.com",
   databaseURL: "https://digitalise-web-solutions.firebaseio.com",
   projectId: "digitalise-web-solutions",
